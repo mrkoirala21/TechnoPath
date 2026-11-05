@@ -32,7 +32,9 @@ import {
   BLOG_POSTS, 
   WHY_CHOOSE_US 
 } from '../data/companyData';
-import { ClientsSection } from '../components/home/ClientsSection';
+import { Clients } from '../components/home/Clients';
+import { Testimonials } from '../components/home/Testimonials';
+import { ImageWithFallback } from '../components/common/ImageWithFallback';
 import { ProjectItem } from '../types';
 
 interface HomePageProps {
@@ -152,11 +154,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             {/* Right Media Column */}
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-700 aspect-[16/10] bg-neutral-900 group">
-                <img
+                <ImageWithFallback
                   src={IMAGES.heroDatacenter}
                   alt="Techno Path Enterprise Data Center Infrastructure"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
+                  category="datacenter"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 
@@ -195,11 +197,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             {/* Left Image Showcase */}
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-neutral-200 shadow-lg bg-neutral-100 aspect-[4/3]">
-                <img
+                <ImageWithFallback
                   src={IMAGES.aboutTeam}
                   alt="Techno Path Technical Engineering Team collaborating in Bharatpur"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  category="team"
                 />
                 <div className="absolute top-4 left-4 bg-[#202329]/90 backdrop-blur-xs text-white px-3 py-1.5 rounded-lg text-xs font-semibold">
                   Bharatpur, Chitwan Headquarters
@@ -518,7 +520,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
       {/* =========================================================================
           SECTION: OUR PRECIOUS CLIENTS
       ========================================================================= */}
-      <ClientsSection onOpenQuoteModal={onOpenQuoteModal} />
+      <Clients onOpenQuoteModal={onOpenQuoteModal} />
+
+      {/* =========================================================================
+          SECTION: CLIENT TESTIMONIALS & TRUST ENDORSEMENTS
+      ========================================================================= */}
+      <Testimonials onOpenQuoteModal={onOpenQuoteModal} />
 
       {/* =========================================================================
           SECTION 07: PROJECTS / PORTFOLIO
@@ -563,11 +570,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
                 className="bg-white rounded-2xl overflow-hidden border border-neutral-200 shadow-sm hover:shadow-md transition-all duration-200 group flex flex-col justify-between"
               >
                 <div className="aspect-[16/9] relative overflow-hidden bg-neutral-900">
-                  <img
+                  <ImageWithFallback
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-3 left-3 bg-[#202329]/80 backdrop-blur-xs text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
                     {project.clientSector} · {project.location}
@@ -719,11 +725,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               >
                 <div>
                   <div className="aspect-[16/9] relative overflow-hidden bg-neutral-900">
-                    <img
+                    <ImageWithFallback
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute top-3 left-3 bg-[#202329]/80 backdrop-blur-xs text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
                       {post.category}
@@ -790,11 +795,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
             </div>
 
             <div className="rounded-xl overflow-hidden aspect-[16/9] mb-6">
-              <img
+              <ImageWithFallback
                 src={activeProjectModal.image}
                 alt={activeProjectModal.title}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
             </div>
 

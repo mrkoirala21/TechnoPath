@@ -90,9 +90,27 @@ export interface ContactInquiry {
 export interface ClientItem {
   id: string;
   name: string;
-  sector: 'Healthcare' | 'Financial & Corporate' | 'Education' | 'Hospitality & Retail' | 'Public Sector';
+  sector: 'Healthcare' | 'Financial & Corporate' | 'Education' | 'Hospitality & Commercial';
   location: string;
+  websiteUrl?: string;
   deployedSolution: string;
   logoBadge: string;
   highlight: string;
 }
+
+export interface TestimonialItem {
+  id: string;
+  clientId: string;
+  clientName: string;
+  authorName: string;
+  authorRole: string;
+  organization: string;
+  sector: 'Healthcare' | 'Financial & Corporate' | 'Education' | 'Hospitality & Commercial';
+  location: string;
+  quote: string;
+  rating: number;
+  keyProject: string;
+  metrics: string;
+  websiteUrl?: string;
+}
+

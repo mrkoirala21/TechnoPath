@@ -19,6 +19,7 @@ import {
   Headphones
 } from 'lucide-react';
 import { PageHeader } from '../components/common/PageHeader';
+import { ImageWithFallback } from '../components/common/ImageWithFallback';
 import { COMPANY_INFO, IMAGES, WHY_CHOOSE_US } from '../data/companyData';
 
 interface AboutPageProps {
@@ -104,11 +105,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
 
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-neutral-200 aspect-[4/3]">
-                <img
+                <ImageWithFallback
                   src={IMAGES.aboutTeam}
                   alt="Techno Path engineers collaborating in corporate headquarters"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  category="team"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white text-xs">

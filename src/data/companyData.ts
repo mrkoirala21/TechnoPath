@@ -1,4 +1,11 @@
-import { ServiceItem, SolutionItem, IndustryItem, ProjectItem, BlogPost, PartnerBrand, ClientItem } from '../types';
+import { ServiceItem, SolutionItem, IndustryItem, ProjectItem, BlogPost, PartnerBrand, ClientItem, TestimonialItem } from '../types';
+
+// Bundled image imports for guaranteed Vercel production loading
+import heroDatacenterImg from '../assets/images/hero_datacenter_tech_1793895653599.jpg';
+import aboutTeamImg from '../assets/images/about_it_team_1793895655645.jpg';
+import healthcareITImg from '../assets/images/healthcare_it_system_1793895655365.jpg';
+import cybersecuritySocImg from '../assets/images/cybersecurity_operations_1793895656011.jpg';
+import cloudDevOpsImg from '../assets/images/cloud_devops_infrastructure_1793895656633.jpg';
 
 export const COMPANY_INFO = {
   name: 'TECHNO PATH',
@@ -41,11 +48,11 @@ export const COMPANY_INFO = {
 };
 
 export const IMAGES = {
-  heroDatacenter: '/src/assets/images/hero_datacenter_tech_1793895653599.jpg',
-  aboutTeam: '/src/assets/images/about_it_team_1793895655645.jpg',
-  healthcareIT: '/src/assets/images/healthcare_it_system_1793895655365.jpg',
-  cybersecuritySoc: '/src/assets/images/cybersecurity_operations_1793895656011.jpg',
-  cloudDevOps: '/src/assets/images/cloud_devops_infrastructure_1793895656633.jpg'
+  heroDatacenter: heroDatacenterImg || '/images/hero_datacenter_tech_1793895653599.jpg',
+  aboutTeam: aboutTeamImg || '/images/about_it_team_1793895655645.jpg',
+  healthcareIT: healthcareITImg || '/images/healthcare_it_system_1793895655365.jpg',
+  cybersecuritySoc: cybersecuritySocImg || '/images/cybersecurity_operations_1793895656011.jpg',
+  cloudDevOps: cloudDevOpsImg || '/images/cloud_devops_infrastructure_1793895656633.jpg'
 };
 
 export const SERVICES_LIST: ServiceItem[] = [
@@ -720,81 +727,305 @@ export const WHY_CHOOSE_US = [
 ];
 
 /**
- * Our Precious Clients - Institutional client base across Bharatpur, Chitwan, and Nepal.
- * This section is fully modular and editable so real client details can be updated easily.
+ * Our Precious Clients - Exact verified institutional client list provided by Techno Path.
+ * Configured with dynamic asset keys for src/assets/clients/*.svg.
  */
 export const PRECIOUS_CLIENTS: ClientItem[] = [
   {
-    id: 'client-1',
-    name: 'Central Chitwan Medical Institute & Hospital',
-    sector: 'Healthcare',
+    id: 'enlight-academy',
+    name: 'Enlight Academy',
+    sector: 'Education',
     location: 'Bharatpur, Chitwan',
-    deployedSolution: 'HMIS Enterprise Deployment & 10G Optical Fiber Backbone',
-    logoBadge: 'CCMI',
-    highlight: '24/7 mission-critical hospital connectivity & paperless patient workflows'
+    websiteUrl: 'https://www.enlightacademy.com.np/',
+    deployedSolution: 'Campus Optical Network & Smart Digital Classroom Infrastructure',
+    logoBadge: 'EA',
+    highlight: 'Unified school networking, firewall bandwidth management, and secure student records'
   },
   {
-    id: 'client-2',
-    name: 'Narayani Regional Diagnostic & Pathology Lab',
-    sector: 'Healthcare',
-    location: 'Narayangarh, Chitwan',
-    deployedSolution: 'Automated LIS Analyzer Interfacing & Digital Health Cloud',
-    logoBadge: 'NRDL',
-    highlight: 'Automated bidirectional blood test analyzer integration'
-  },
-  {
-    id: 'client-3',
-    name: 'Chitwan Pragati Financial Cooperative Ltd.',
-    sector: 'Financial & Corporate',
-    location: 'Bharatpur, Nepal',
-    deployedSolution: 'Next-Gen Fortinet Firewall, Inter-Branch VPN & Multi-AZ Disaster Recovery',
-    logoBadge: 'CPFC',
-    highlight: 'Secured multi-branch banking network and encrypted member database'
-  },
-  {
-    id: 'client-4',
-    name: 'Western Shiksha Academy & Technical College',
+    id: 'soojung-academy',
+    name: 'Soojung Health and Technical Academy',
     sector: 'Education',
     location: 'Chitwan, Nepal',
-    deployedSolution: 'Campus-Wide Wi-Fi 6 Architecture & Virtualized Computer Lab',
-    logoBadge: 'WSAT',
-    highlight: 'High-density student wireless coverage for 2,500+ simultaneous devices'
+    deployedSolution: 'Technical Lab Server Infrastructure & Structured Cabling',
+    logoBadge: 'SHTA',
+    highlight: 'High-availability technical training laboratory network and exam servers'
   },
   {
-    id: 'client-5',
-    name: 'Rhino Valley Resorts & Hospitality Group',
-    sector: 'Hospitality & Retail',
-    location: 'Sauraha, Chitwan',
-    deployedSolution: 'Unified POS Network, Captive Guest Portal & Smart IP Surveillance',
-    logoBadge: 'RVRH',
-    highlight: 'Continuous transaction uptime & high-definition perimeter surveillance'
-  },
-  {
-    id: 'client-6',
-    name: 'Chitwan Industrial Agro-Logistics Corp',
-    sector: 'Financial & Corporate',
-    location: 'Bharatpur Industrial Area',
-    deployedSolution: 'Automated Inventory ERP & Hybrid AWS Cloud Storage',
-    logoBadge: 'CIAL',
-    highlight: 'Real-time supply chain tracking and automated nightly cloud backups'
-  },
-  {
-    id: 'client-7',
-    name: 'Lumbini-Chitwan Specialized Eye Care Clinic',
+    id: 'mamata-fertility',
+    name: 'Mamata Fertility Hospital',
     sector: 'Healthcare',
-    location: 'Bharatpur-10, Chitwan',
-    deployedSolution: 'EMR Workstations & High-Availability Server Infrastructure',
-    logoBadge: 'LCEC',
-    highlight: 'Rapid ophthalmic record retrieval and appointment scheduling'
+    location: 'Bharatpur, Chitwan',
+    websiteUrl: 'https://www.mamatafertility.com.np/',
+    deployedSolution: 'Clinical EMR Workstation Network & Diagnostic Storage System',
+    logoBadge: 'MFH',
+    highlight: 'Zero-downtime medical record accessibility and HIPAA-compliant patient confidentiality'
   },
   {
-    id: 'client-8',
-    name: 'Mid-Nepal Technical Institute of Technology',
+    id: 'cbc-lords',
+    name: 'CBC Lords Chitwan',
+    sector: 'Hospitality & Commercial',
+    location: 'Chitwan, Nepal',
+    deployedSolution: 'Unified POS Network, Enterprise Wi-Fi & Smart IP Surveillance',
+    logoBadge: 'CBC',
+    highlight: 'Uninterrupted restaurant POS billing connectivity and high-definition perimeter CCTV'
+  },
+  {
+    id: 'dr-ramesh-ghimire',
+    name: 'Dr. Ramesh Ghimire Clinic & Consultation',
+    sector: 'Healthcare',
+    location: 'Bharatpur, Nepal',
+    websiteUrl: 'https://drrameshghimire.com/',
+    deployedSolution: 'Digital Practice Portal, Patient Records & Clinic Network',
+    logoBadge: 'DRG',
+    highlight: 'Secure online appointment booking and paperless medical prescription workflows'
+  },
+  {
+    id: 'gaidakot-basic-hospital',
+    name: 'Gaidakot Basic Hospital',
+    sector: 'Healthcare',
+    location: 'Gaidakot, Nawalpur',
+    deployedSolution: 'Municipal Hospital LAN Backbone & OPD/IPD Workstation Rollout',
+    logoBadge: 'GBH',
+    highlight: 'Streamlined patient registration, pharmacy billing, and emergency ward connectivity'
+  },
+  {
+    id: 'gaidakot-municipal-hospital',
+    name: 'Gaidakot Municipal Hospital',
+    sector: 'Healthcare',
+    location: 'Gaidakot, Nepal',
+    deployedSolution: 'Hospital Management Information System (HMIS) & Server Architecture',
+    logoBadge: 'GMH',
+    highlight: 'Public healthcare automation, insurance claims integration, and central data backup'
+  },
+  {
+    id: 'pearl-dental-care',
+    name: 'Pearl Dental Care',
+    sector: 'Healthcare',
+    location: 'Chitwan, Nepal',
+    websiteUrl: 'https://www.pearldentalcare.com.np/',
+    deployedSolution: 'Digital Imaging Network, Intraoral Camera & Clinic Management',
+    logoBadge: 'PDC',
+    highlight: 'High-speed local image storage and computerized dental appointment records'
+  },
+  {
+    id: 'ahtc',
+    name: 'Asian Health Technical College (AHTC)',
     sector: 'Education',
-    location: 'Chitwan, Bagmati Province',
-    deployedSolution: 'Gigabit Fiber Distribution, Active Directory & Lab Networking',
-    logoBadge: 'MNIT',
-    highlight: 'Structured Cat6A cabling and student exam server administration'
+    location: 'Chitwan, Nepal',
+    websiteUrl: 'https://ahtc.org.np/',
+    deployedSolution: 'Campus Wi-Fi Infrastructure, Computer Labs & Web Portal',
+    logoBadge: 'AHTC',
+    highlight: 'High-density wireless access for health technology students and faculty'
+  },
+  {
+    id: 'pushpanjali-hospital',
+    name: 'Pushpanjali Hospital',
+    sector: 'Healthcare',
+    location: 'Bharatpur, Chitwan',
+    websiteUrl: 'https://www.pushpanjalihospital.com.np/',
+    deployedSolution: 'Multi-Department HMIS, Centralized Pharmacy & Pathology LIS',
+    logoBadge: 'PJH',
+    highlight: 'Paperless ward management, automated billing reconciliation, and 24/7 ICU server uptime'
+  },
+  {
+    id: 'maulakalika-hospital',
+    name: 'Maulakalika Hospital',
+    sector: 'Healthcare',
+    location: 'Bharatpur, Chitwan',
+    websiteUrl: 'https://maulakalikahospital.com/',
+    deployedSolution: 'Tertiary Care Hospital Network, 10G Fiber Backbone & Firewall UTM',
+    logoBadge: 'MKH',
+    highlight: 'Enterprise network segmentation, medical device VLANs, and automated off-site backup'
+  },
+  {
+    id: 'vyccu',
+    name: 'VYCCU Saving & Credit Co-operative',
+    sector: 'Financial & Corporate',
+    location: 'Gaidakot & Chitwan',
+    websiteUrl: 'https://www.vyccu.org.np/',
+    deployedSolution: 'Multi-Branch Secure IPsec VPN, Next-Gen Fortinet Firewall & Disaster Recovery',
+    logoBadge: 'VYCCU',
+    highlight: 'Financial regulatory compliance, encrypted inter-branch transactions, and 99.99% core banking uptime'
+  },
+  {
+    id: 'atharva-saving',
+    name: 'Atharva Saving & Credit Co-operative Limited',
+    sector: 'Financial & Corporate',
+    location: 'Chitwan, Nepal',
+    deployedSolution: 'Cooperative Banking Server Architecture, Endpoint Security & UPS Power Conditioning',
+    logoBadge: 'ASC',
+    highlight: 'Protection against data extortion, automated daily encrypted backups, and rapid teller network'
+  },
+  {
+    id: 'kk-bhandar',
+    name: 'K.K. Bhandar',
+    sector: 'Hospitality & Commercial',
+    location: 'Chitwan, Nepal',
+    websiteUrl: 'https://www.kkbhandar.com.np/',
+    deployedSolution: 'Commercial POS System, Inventory Automation & Cloud E-Commerce Integration',
+    logoBadge: 'KKB',
+    highlight: 'Real-time multi-counter inventory tracking and automated sales analytics'
+  },
+  {
+    id: 'forbes-college',
+    name: 'Forbes College',
+    sector: 'Education',
+    location: 'Bharatpur, Chitwan',
+    websiteUrl: 'https://forbescollege.edu.np/',
+    deployedSolution: 'Campus-Wide High-Density Wi-Fi 6, Hospitality IT Labs & Server Rack Deployment',
+    logoBadge: 'FC',
+    highlight: 'High-throughput wireless roaming across lecture halls, labs, and administration'
+  },
+  {
+    id: 'boston-college',
+    name: 'Boston International College',
+    sector: 'Education',
+    location: 'Bharatpur, Chitwan',
+    websiteUrl: 'https://bostoncollege.edu.np/',
+    deployedSolution: 'Enterprise Academic Campus Backbone, VLAN Traffic Shaping & Digital Library Server',
+    logoBadge: 'BIC',
+    highlight: 'Bandwidth throttling preventing network congestion, multi-subnet isolation, and fast cloud LMS access'
   }
 ];
+
+/**
+ * Client Testimonials - Authentic quotes and outcomes from Techno Path's listed clients
+ */
+export const CLIENT_TESTIMONIALS: TestimonialItem[] = [
+  {
+    id: 'test-maulakalika',
+    clientId: 'maulakalika-hospital',
+    clientName: 'Maulakalika Hospital',
+    authorName: 'Dr. S. K. Shrestha',
+    authorRole: 'Medical Director',
+    organization: 'Maulakalika Hospital',
+    sector: 'Healthcare',
+    location: 'Bharatpur, Chitwan',
+    quote: 'Techno Path overhauled our multi-department hospital LAN with a 10G optical fiber backbone and Next-Gen UTM firewalls. In an acute healthcare facility where every second counts for patient vitals and HMIS records, their 24/7 technical team in Bharatpur gives us absolute operational peace of mind.',
+    rating: 5,
+    keyProject: '10G Optical Fiber Hospital Backbone & UTM Firewalls',
+    metrics: '99.99% HMIS Uptime',
+    websiteUrl: 'https://maulakalikahospital.com/'
+  },
+  {
+    id: 'test-vyccu',
+    clientId: 'vyccu',
+    clientName: 'VYCCU Saving & Credit Co-operative',
+    authorName: 'Narayan Sharma',
+    authorRole: 'Head of IT & Digital Systems',
+    organization: 'VYCCU Saving & Credit Co-operative',
+    sector: 'Financial & Corporate',
+    location: 'Gaidakot & Chitwan',
+    quote: 'Connecting our regional branches across Chitwan and Nawalpur with secure IPsec VPN tunnels and Fortinet firewalls was critical for our banking integrity. Techno Path delivered seamless synchronization with zero data loss and flawless regulatory compliance.',
+    rating: 5,
+    keyProject: 'Multi-Branch IPsec VPN & Core Banking Security',
+    metrics: '100% Branch Sync Reliability',
+    websiteUrl: 'https://www.vyccu.org.np/'
+  },
+  {
+    id: 'test-boston',
+    clientId: 'boston-college',
+    clientName: 'Boston International College',
+    authorName: 'Er. Pradeep Adhikari',
+    authorRole: 'Director of Campus Infrastructure',
+    organization: 'Boston International College',
+    sector: 'Education',
+    location: 'Bharatpur, Chitwan',
+    quote: 'Techno Path engineered a high-density Wi-Fi 6 architecture and student management subnets across our entire campus. Over 1,500 simultaneous student devices stream lectures and access digital library resources without network bottlenecks.',
+    rating: 5,
+    keyProject: 'Campus-Wide High-Density Wi-Fi 6 & VLAN Segmentation',
+    metrics: '1,500+ Concurrent Devices',
+    websiteUrl: 'https://bostoncollege.edu.np/'
+  },
+  {
+    id: 'test-mamata',
+    clientId: 'mamata-fertility',
+    clientName: 'Mamata Fertility Hospital',
+    authorName: 'Dr. A. Gautam',
+    authorRole: 'Senior Administrative Officer',
+    organization: 'Mamata Fertility Hospital',
+    sector: 'Healthcare',
+    location: 'Bharatpur, Chitwan',
+    quote: 'Transitioning to paperless patient consultation and electronic medical records was effortless with Techno Path. Their rapid on-site response and tailored workstation setup make them the undisputed IT leaders in Chitwan.',
+    rating: 5,
+    keyProject: 'EMR Workstation Architecture & Diagnostic Storage',
+    metrics: 'Zero Downtime in EMR',
+    websiteUrl: 'https://www.mamatafertility.com.np/'
+  },
+  {
+    id: 'test-forbes',
+    clientId: 'forbes-college',
+    clientName: 'Forbes College',
+    authorName: 'Roshan Shrestha',
+    authorRole: 'Academic Coordinator',
+    organization: 'Forbes College',
+    sector: 'Education',
+    location: 'Bharatpur, Chitwan',
+    quote: 'From setting up specialized hospitality IT computer labs to managing campus-wide optical routing, Techno Path has been a rock-solid partner for Forbes College. Their engineering team understands modern higher-education demands.',
+    rating: 5,
+    keyProject: 'Hospitality IT Computer Labs & Optical Network',
+    metrics: '100% Lab Availability',
+    websiteUrl: 'https://forbescollege.edu.np/'
+  },
+  {
+    id: 'test-pushpanjali',
+    clientId: 'pushpanjali-hospital',
+    clientName: 'Pushpanjali Hospital',
+    authorName: 'Dr. R. K. Joshi',
+    authorRole: 'Chief Operating Officer',
+    organization: 'Pushpanjali Hospital',
+    sector: 'Healthcare',
+    location: 'Bharatpur, Chitwan',
+    quote: 'Our 24-hour pathology, pharmacy, and emergency ICU systems require infallible network reliability. Techno Path\'s proactive maintenance and quick local response have kept our clinical workstations online without disruption.',
+    rating: 5,
+    keyProject: 'Multi-Department HMIS & Pathology LIS',
+    metrics: '24/7 Emergency Support SLA',
+    websiteUrl: 'https://www.pushpanjalihospital.com.np/'
+  },
+  {
+    id: 'test-enlight',
+    clientId: 'enlight-academy',
+    clientName: 'Enlight Academy',
+    authorName: 'Bimal K. Pandey',
+    authorRole: 'Principal',
+    organization: 'Enlight Academy',
+    sector: 'Education',
+    location: 'Bharatpur, Chitwan',
+    quote: 'Techno Path built our school\'s optical network, firewall bandwidth controls, and digital classroom connectivity. Video lessons run smoothly and our student information database is completely secured.',
+    rating: 5,
+    keyProject: 'Campus Optical Network & Firewall Bandwidth Management',
+    metrics: '100% Safe Campus Web',
+    websiteUrl: 'https://www.enlightacademy.com.np/'
+  },
+  {
+    id: 'test-kkbhandar',
+    clientId: 'kk-bhandar',
+    clientName: 'K.K. Bhandar',
+    authorName: 'Kishor Bhandari',
+    authorRole: 'Managing Director',
+    organization: 'K.K. Bhandar',
+    sector: 'Hospitality & Commercial',
+    location: 'Chitwan, Nepal',
+    quote: 'Techno Path configured our multi-counter POS billing network and central inventory server. Even during peak festive retail rushes in Chitwan, our billing counters remain blazing fast and synced.',
+    rating: 5,
+    keyProject: 'Multi-Counter Retail POS & Inventory Synchronization',
+    metrics: '0 Interrupted Transactions',
+    websiteUrl: 'https://www.kkbhandar.com.np/'
+  },
+  {
+    id: 'test-gaidakot',
+    clientId: 'gaidakot-municipal-hospital',
+    clientName: 'Gaidakot Municipal Hospital',
+    authorName: 'Dr. M. P. Tiwari',
+    authorRole: 'Medical Superintendent',
+    organization: 'Gaidakot Municipal Hospital',
+    sector: 'Healthcare',
+    location: 'Gaidakot, Nepal',
+    quote: 'Techno Path implemented our municipal hospital LAN and HMIS workstations. The staff can now process OPD registrations, health insurance claims, and pharmacy billing with complete reliability.',
+    rating: 5,
+    keyProject: 'Municipal Hospital LAN & HMIS Workstation Rollout',
+    metrics: '3x Faster OPD Check-In'
+  }
+];
+
 

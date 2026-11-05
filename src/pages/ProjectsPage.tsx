@@ -10,9 +10,9 @@ import {
   PhoneCall,
   ExternalLink
 } from 'lucide-react';
-import { PageHeader } from '../components/common/PageHeader';
 import { PROJECTS_LIST, COMPANY_INFO } from '../data/companyData';
 import { ProjectItem } from '../types';
+import { ImageWithFallback } from '../components/common/ImageWithFallback';
 
 interface ProjectsPageProps {
   onOpenQuoteModal: (service?: string) => void;
