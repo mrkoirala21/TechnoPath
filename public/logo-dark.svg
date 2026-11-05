@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 144" fill="none">
+  <!-- TECHNO PATH Official Vector Logo (Dark Background Variant) -->
+  <style>
+    .brand-text-dark {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 56px;
+      fill: #FFFFFF;
+      letter-spacing: 0.05em;
+    }
+  </style>
+
+  <!-- Row 1: TECHN + Power Button O -->
+  <text x="14" y="60" class="brand-text-dark">TECHN</text>
+
+  <!-- Power Button 'O' -->
+  <g transform="translate(236, 14)">
+    <path
+      d="M 16 12 A 22 22 0 1 0 36 12"
+      stroke="#F4510B"
+      stroke-width="9.5"
+      stroke-linecap="square"
+      fill="none"
+    />
+    <rect x="21" y="2" width="10" height="25" rx="1" fill="#F4510B" />
+  </g>
+
+  <!-- Row 2: P + Stylized A + TH -->
+  <!-- 'P' -->
+  <text x="50" y="128" class="brand-text-dark">P</text>
+
+  <!-- Stylized 'A' / Path & Node Emblem -->
+  <g transform="translate(94, 68)">
+    <circle cx="36" cy="10" r="6" fill="#F4510B" />
+    <path d="M 31 21 L 11 63" stroke="#F4510B" stroke-width="3.5" stroke-linecap="square" />
+    <path d="M 41 21 L 61 63" stroke="#F4510B" stroke-width="3.5" stroke-linecap="square" />
+    <path d="M 36 23 L 55 58 L 36 48 L 17 58 Z" fill="#F4510B" />
+  </g>
+
+  <!-- 'TH' -->
+  <text x="164" y="128" class="brand-text-dark">TH</text>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "Techno Path - IT Solutions & Infrastructure Nepal",
+  "description": "Techno Path delivers enterprise IT infrastructure, cloud computing, cybersecurity, healthcare IT systems, and digital solutions in Bharatpur, Chitwan, Nepal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

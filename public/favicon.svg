@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Charcoal Container -->
+  <rect width="64" height="64" rx="14" fill="#202329"/>
+  
+  <!-- Row 1: Orange Power Button 'O' -->
+  <g transform="translate(16, 6) scale(0.68)">
+    <path
+      d="M 17 12 A 20 20 0 1 0 31 12"
+      stroke="#F4510B"
+      stroke-width="8.5"
+      stroke-linecap="square"
+      fill="none"
+    />
+    <rect x="20" y="2" width="8" height="20" rx="1" fill="#F4510B" />
+  </g>
+
+  <!-- Row 2: Orange Stylized 'A' / Path Symbol -->
+  <g transform="translate(18, 30) scale(0.6)">
+    <circle cx="24" cy="8" r="5" fill="#F4510B" />
+    <path d="M 20 16 L 4 48" stroke="#F4510B" stroke-width="3.5" stroke-linecap="square" />
+    <path d="M 28 16 L 44 48" stroke="#F4510B" stroke-width="3.5" stroke-linecap="square" />
+    <path d="M 24 17 L 39 44 L 24 37 L 9 44 Z" fill="#F4510B" />
+  </g>
+</svg>

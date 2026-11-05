@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://technopath.com.np/sitemap.xml
