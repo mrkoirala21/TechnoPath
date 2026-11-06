@@ -478,7 +478,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
                 to="/clients" 
                 className={`py-2.5 px-3 rounded-lg ${isActive('/clients') ? 'bg-[#F4510B]/10 text-[#F4510B] font-semibold' : 'hover:bg-neutral-50'}`}
               >
-                Our Precious Clients (16+)
+                Our Valuable Clients (17+)
               </Link>
 
               <Link 

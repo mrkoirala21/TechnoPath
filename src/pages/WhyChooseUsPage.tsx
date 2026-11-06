@@ -202,10 +202,10 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuoteMod
                 Trusted Across Chitwan & Nepal
               </span>
               <h3 className="text-2xl font-bold text-white">
-                16+ Verified Institutional Partners
+                17+ Verified Valuable Client Partners
               </h3>
               <p className="text-xs text-neutral-400">
-                Hospitals, colleges, commercial centers, and clinics rely on our infrastructure daily.
+                Technology innovators like Gunasys, hospitals, colleges, and commercial centers rely on our infrastructure daily.
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3">
@@ -213,7 +213,7 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuoteMod
                 to="/clients"
                 className="px-6 py-3 rounded-xl bg-[#F4510B] hover:bg-[#d94406] text-white font-semibold text-xs transition-colors flex items-center gap-2"
               >
-                <span>View All 16+ Client Profiles</span>
+                <span>View All 17+ Client Profiles</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link

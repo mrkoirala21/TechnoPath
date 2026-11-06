@@ -4,9 +4,9 @@
  * Guarantees asset resolution in both Vite dev and Vercel production environments.
  */
 
-import enlightAcademyLogo from './enlight-academy.svg';
-import soojungAcademyLogo from './soojung-academy.svg';
-import mamataFertilityLogo from './mamata-fertility.svg';
+import enlightAcademyLogo from './enlight-academy.png';
+import soojungAcademyLogo from './soojung-academy.png';
+import mamataFertilityLogo from './mamata-fertility.png';
 import cbcLordsLogo from './cbc-lords.svg';
 import drRameshGhimireLogo from './dr-ramesh-ghimire.svg';
 import gaidakotBasicHospitalLogo from './gaidakot-basic-hospital.svg';
@@ -20,11 +20,13 @@ import atharvaSavingLogo from './atharva-saving.svg';
 import kkBhandarLogo from './kk-bhandar.svg';
 import forbesCollegeLogo from './forbes-college.svg';
 import bostonCollegeLogo from './boston-college.svg';
+import gunasysLogo from './gunasys.png';
 
 export const CLIENT_LOGOS: Record<string, string> = {
   'enlight-academy': enlightAcademyLogo,
   'soojung-academy': soojungAcademyLogo,
   'mamata-fertility': mamataFertilityLogo,
+  'gunasys': gunasysLogo,
   'cbc-lords': cbcLordsLogo,
   'dr-ramesh-ghimire': drRameshGhimireLogo,
   'gaidakot-basic-hospital': gaidakotBasicHospitalLogo,

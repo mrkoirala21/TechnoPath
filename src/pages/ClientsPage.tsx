@@ -63,8 +63,8 @@ export const ClientsPage: React.FC<ClientsPageProps> = ({ onOpenQuoteModal }) =>
   return (
     <div className="bg-white min-h-screen">
       <PageHeader
-        title="Our Precious Clients"
-        subtitle="Premier healthcare institutes, educational colleges, financial cooperatives, and commercial leaders across Chitwan and Nepal who trust Techno Path."
+        title="Our Valuable Clients"
+        subtitle="Premier technology innovators like Gunasys, healthcare institutes, educational colleges, financial cooperatives, and commercial leaders across Nepal who trust Techno Path."
         badgeText="Institutional Client Network"
         breadcrumbs={[{ label: 'Clients' }]}
       />

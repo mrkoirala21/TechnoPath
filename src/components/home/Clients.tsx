@@ -81,7 +81,7 @@ export const Clients: React.FC<ClientsProps> = ({ onOpenQuoteModal }) => {
               <span>Proven Institutional Trust</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900">
-              Our Precious Clients
+              Our Valuable Clients
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base max-w-2xl leading-relaxed">
               Leading hospitals, medical colleges, financial cooperatives, academic institutions, and enterprises across Bharatpur, Chitwan, and Nepal who trust Techno Path for reliable IT infrastructure.
@@ -301,7 +301,7 @@ export const Clients: React.FC<ClientsProps> = ({ onOpenQuoteModal }) => {
         <div className="p-8 rounded-3xl bg-[#202329] text-white">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-neutral-800">
             <div className="pt-4 md:pt-0">
-              <div className="text-3xl font-black text-white tabular-nums">16+</div>
+              <div className="text-3xl font-black text-white tabular-nums">17+</div>
               <div className="text-xs text-neutral-400 mt-1">Key Regional Clients</div>
             </div>
             <div className="pt-4 md:pt-0">

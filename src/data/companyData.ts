@@ -829,6 +829,15 @@ export const PRECIOUS_CLIENTS: ClientItem[] = [
     highlight: 'Zero-downtime medical record accessibility and HIPAA-compliant patient confidentiality'
   },
   {
+    id: 'gunasys',
+    name: 'Gunasys',
+    sector: 'Financial & Corporate',
+    location: 'Nepal',
+    deployedSolution: 'Enterprise Cloud & Server Infrastructure, Network Security & Systems Architecture',
+    logoBadge: 'GUNA',
+    highlight: 'High-availability server infrastructure, zero-trust network boundaries, and continuous cloud reliability'
+  },
+  {
     id: 'cbc-lords',
     name: 'CBC Lords Chitwan',
     sector: 'Hospitality & Commercial',
@@ -1093,6 +1102,20 @@ export const CLIENT_TESTIMONIALS: TestimonialItem[] = [
     rating: 5,
     keyProject: 'Municipal Hospital LAN & HMIS Workstation Rollout',
     metrics: '3x Faster OPD Check-In'
+  },
+  {
+    id: 'test-gunasys',
+    clientId: 'gunasys',
+    clientName: 'Gunasys',
+    authorName: 'Engineering Operations Lead',
+    authorRole: 'Head of Infrastructure & Systems',
+    organization: 'Gunasys',
+    sector: 'Financial & Corporate',
+    location: 'Nepal',
+    quote: 'Techno Path delivered an enterprise-grade cloud server architecture and fortified network security for Gunasys. Their team demonstrates deep domain competence in high-throughput routing, zero-trust perimeter defense, and automated backup pipelines.',
+    rating: 5,
+    keyProject: 'Cloud Server Architecture & Zero-Trust Perimeter Defense',
+    metrics: '99.98% System Uptime'
   }
 ];
 

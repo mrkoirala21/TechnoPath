@@ -142,8 +142,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
                   <div className="text-[11px] sm:text-xs text-neutral-400 mt-0.5">Emergency Support</div>
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-black text-white tabular-nums">16+</div>
-                  <div className="text-[11px] sm:text-xs text-neutral-400 mt-0.5">Key Regional Clients</div>
+                  <div className="text-xl sm:text-2xl font-black text-white tabular-nums">17+</div>
+                  <div className="text-[11px] sm:text-xs text-neutral-400 mt-0.5">Valuable Clients</div>
                 </div>
               </div>
             </div>
@@ -356,17 +356,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-[#F4510B]">
-                Institutional Trust
+                Our Valuable Clients
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 mt-1">
-                Trusted by 16+ Leading Institutions
+                Trusted by 17+ Leading Institutions & Enterprises
               </h2>
             </div>
             <Link
               to="/clients"
               className="text-xs font-bold text-[#F4510B] hover:underline flex items-center gap-1.5 self-start sm:self-auto"
             >
-              <span>View All 16+ Client Profiles & Details</span>
+              <span>View All 17+ Client Profiles & Details</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

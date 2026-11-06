@@ -276,7 +276,7 @@ export const IndustryDetailPage: React.FC<IndustryDetailPageProps> = ({ onOpenQu
                       to="/clients"
                       className="text-xs font-bold text-[#F4510B] hover:text-white transition-colors flex items-center gap-1"
                     >
-                      <span>All 16+ Clients</span>
+                      <span>All 17+ Clients</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
