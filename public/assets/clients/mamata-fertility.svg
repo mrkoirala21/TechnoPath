@@ -1,9 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#FFF1F2"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#E11D48" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#E11D48" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#E11D48" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#E11D48" text-anchor="middle" letter-spacing="0.05em">MFH</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#E11D48"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#FDF2F8"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#DB2777" stroke-width="2.5" stroke-opacity="0.3"/>
+  <circle cx="100" cy="80" r="46" fill="#DB2777" fill-opacity="0.08"/>
+  <!-- Stylized Loving Mother & Infant Silhouette -->
+  <!-- Mother head -->
+  <circle cx="94" cy="56" r="11" fill="#BE185D"/>
+  <!-- Child head -->
+  <circle cx="114" cy="72" r="8" fill="#F43F5E"/>
+  <!-- Mother torso & sheltering embrace -->
+  <path d="M 82 86 C 80 66 104 64 116 78 C 124 88 120 102 108 106 C 96 110 84 100 82 86 Z" fill="#BE185D"/>
+  <path d="M 108 86 C 114 80 126 84 124 94 C 122 100 114 102 108 98 Z" fill="#F43F5E"/>
+  <!-- Gentle Lotus Petals Base -->
+  <path d="M 72 102 C 84 94 94 106 100 114 C 106 106 116 94 128 102 C 118 116 106 118 100 116 C 94 118 82 116 72 102 Z" fill="#F472B6"/>
+  <!-- Spark of life -->
+  <circle cx="100" cy="42" r="3" fill="#F59E0B"/>
+  <!-- Typography Banner -->
+  <rect x="22" y="132" width="156" height="28" rx="7" fill="#9D174D"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.05em">MAMATA FERTILITY</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#FBCFE8" text-anchor="middle" letter-spacing="0.08em">HOSPITAL & IVF CENTER</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">BHARATPUR · CHITWAN</text>
 </svg>

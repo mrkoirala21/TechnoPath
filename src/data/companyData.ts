@@ -90,11 +90,23 @@ export const SERVICES_LIST: ServiceItem[] = [
     faqs: [
       {
         question: 'Do you provide on-site hardware installation in Bharatpur and Chitwan?',
-        answer: 'Yes, our certified network engineers are on the ground in Bharatpur, Chitwan, and deploy on-site throughout Bagmati Province and across Nepal.'
+        answer: 'Yes, our certified network engineers are on the ground in Bharatpur, Chitwan, and deploy on-site throughout Bagmati Province and across Nepal with fast emergency response.'
       },
       {
         question: 'Can you audit our existing slow office network?',
         answer: 'Absolutely. We conduct full packet analysis, cable testing, switch configuration audits, and Wi-Fi spectrum surveys to identify bottlenecks and implement permanent fixes.'
+      },
+      {
+        question: 'What structured cabling standards and warranties do you provide?',
+        answer: 'We deploy Cat6 / Cat6A LSZH copper and single-mode/multi-mode optical fiber adhering to ANSI/TIA-568 standards with certified patch panels, cable dressing, and Fluke testing reports.'
+      },
+      {
+        question: 'How do you safeguard network hardware against load-shedding and power surges?',
+        answer: 'We integrate online double-conversion UPS systems with automatic voltage regulation (AVR), generator transfer failovers, and heavy-duty surge suppressors to guarantee clean, continuous power.'
+      },
+      {
+        question: 'What is your emergency SLA for hardware failure in hospital networks?',
+        answer: 'For mission-critical facilities like hospitals and financial institutions in Chitwan, our SLA includes guaranteed 2-hour on-site dispatch with hot-spare replacement routers and switches.'
       }
     ]
   },
@@ -131,11 +143,23 @@ export const SERVICES_LIST: ServiceItem[] = [
     faqs: [
       {
         question: 'Can we keep some servers local and connect them to AWS?',
-        answer: 'Yes, we specialize in Hybrid Cloud architectures using IPSec VPN or Direct Connect between your Bharatpur office/datacenter and AWS cloud regions.'
+        answer: 'Yes, we specialize in Hybrid Cloud architectures using IPSec VPN or AWS Direct Connect between your Bharatpur office/datacenter and AWS cloud regions for low-latency sync.'
       },
       {
         question: 'How do you ensure data security in the cloud?',
-        answer: 'We enforce least-privilege IAM policies, TLS 1.3 encryption in transit, AES-256 encryption at rest, and automated vulnerability scanning.'
+        answer: 'We enforce least-privilege IAM policies, TLS 1.3 encryption in transit, AES-256 encryption at rest, private subnets with NAT gateways, and automated vulnerability scanning.'
+      },
+      {
+        question: 'What latency can we expect when accessing AWS cloud services from Nepal?',
+        answer: 'Workloads hosted in the AWS Mumbai (ap-south-1) region typically achieve 35-50ms latency across Nepali ISPs. We also configure CloudFront edge caching for instant static delivery.'
+      },
+      {
+        question: 'How do automated backups and disaster recovery testing work?',
+        answer: 'We configure immutable automated snapshots, multi-region replication, and regular recovery drills targeting a Recovery Point Objective (RPO) under 15 minutes and Recovery Time Objective (RTO) under 1 hour.'
+      },
+      {
+        question: 'How do you help us optimize monthly AWS or cloud hosting expenses?',
+        answer: 'We audit your infrastructure to eliminate unattached storage volumes, right-size compute instances, implement auto-scaling schedules, and transition steady workloads to reserved instances or savings plans.'
       }
     ]
   },
@@ -172,11 +196,23 @@ export const SERVICES_LIST: ServiceItem[] = [
     faqs: [
       {
         question: 'Are small and medium businesses targeted by hackers in Nepal?',
-        answer: 'Yes, automated botnets and phishing attacks actively scan Nepali IP subnets daily. SMBs and cooperatives without proper firewalls are prime targets.'
+        answer: 'Yes, automated botnets, credential stuffers, and phishing campaigns scan Nepali IP ranges around the clock. SMBs, schools, and cooperatives without proper firewalls are prime targets.'
       },
       {
         question: 'What is included in a Cybersecurity Assessment?',
-        answer: 'We scan your routers, public IP addresses, active directory configurations, open ports, and internal endpoints, delivering a prioritized remediation roadmap.'
+        answer: 'We scan your routers, public IP addresses, active directory configurations, open ports, and internal endpoints, delivering a prioritized executive remediation roadmap.'
+      },
+      {
+        question: 'What is the difference between Vulnerability Assessment and Penetration Testing?',
+        answer: 'A Vulnerability Assessment (VA) identifies known security flaws and unpatched software, while Penetration Testing (PT) safely exploits those weaknesses to prove real-world impact and test defensive responses.'
+      },
+      {
+        question: 'How do you protect organizations against ransomware and data extortion?',
+        answer: 'We deploy next-generation endpoint detection with automated process quarantine, air-gapped immutable backup schedules, network segmentation preventing lateral spread, and strict email spam filters.'
+      },
+      {
+        question: 'Do you conduct employee cybersecurity awareness drills?',
+        answer: 'Yes, we simulate realistic phishing attacks, conduct hands-on security workshops for non-technical employees, and help implement strict password hygiene and Multi-Factor Authentication (MFA).'
       }
     ]
   },
@@ -214,11 +250,23 @@ export const SERVICES_LIST: ServiceItem[] = [
     faqs: [
       {
         question: 'Can your HMIS integrate with Nepal Government Health Insurance (Bima)?',
-        answer: 'Yes, our healthcare software integrates with national insurance claims protocols and generates the required billing breakdowns.'
+        answer: 'Yes, our healthcare software integrates with national insurance claims protocols, electronic claim documentation, and generates the required billing breakdowns.'
       },
       {
         question: 'Do you provide on-site training for doctors, nurses, and billing staff?',
-        answer: 'Yes, we provide hands-on department-by-department training sessions, user documentation in English and Nepali, and post-launch go-live support.'
+        answer: 'Yes, we provide hands-on department-by-department training sessions, user documentation in English and Nepali, and post-launch on-site go-live support in your hospital.'
+      },
+      {
+        question: 'How does the hospital system operate during internet connectivity outages?',
+        answer: 'Our HMIS runs on a local high-availability hospital server with offline-first architecture. All OPD, pharmacy, pathology, and ward functions continue without interruption, auto-syncing when internet returns.'
+      },
+      {
+        question: 'Can you interface with existing clinical laboratory analyzers?',
+        answer: 'Yes, we support bidirectional interfacing with hematology, biochemistry, and immunoassay analyzers via HL7, ASTM, and serial/TCP protocols with barcode-driven specimen tracking.'
+      },
+      {
+        question: 'How do you safeguard patient medical confidentiality and data privacy?',
+        answer: 'We implement granular Role-Based Access Control (RBAC), tamper-evident audit logs for every patient record accessed, encrypted storage, and automated scheduled local and off-site backups.'
       }
     ]
   },
@@ -254,12 +302,20 @@ export const SERVICES_LIST: ServiceItem[] = [
     industries: ['Hotels & Hospitality', 'Manufacturing & Exporters', 'Educational Consultancies', 'Real Estate & Construction'],
     faqs: [
       {
-        question: 'How long does it take to develop a corporate website?',
-        answer: 'A standard corporate website is delivered within 2 to 3 weeks, including design, copy integration, SEO optimization, and mobile testing.'
+        question: 'How long does it take to develop a corporate website or web platform?',
+        answer: 'A standard corporate website is delivered within 2 to 3 weeks, while comprehensive web applications and enterprise portals with custom integrations typically take 4 to 6 weeks.'
       },
       {
-        question: 'Will our website work smoothly on mobile phones in Nepal?',
-        answer: 'Every website we build is mobile-first, lightweight, and tested for fast loading even on standard mobile network connections.'
+        question: 'Will our website work smoothly on mobile phones and 3G/4G in Nepal?',
+        answer: 'Every website we build is mobile-first, lightweight, and tested for lightning-fast load times even on standard mobile connections, with optimized images and responsive Tailwind layouts.'
+      },
+      {
+        question: 'Can you integrate Nepali digital payment gateways (eSewa, Khalti, ConnectIPS)?',
+        answer: 'Yes, we implement secure merchant API integrations for eSewa, Khalti, ConnectIPS, and Fonepay with real-time webhook callback verification and automated receipts.'
+      },
+      {
+        question: 'Do you provide ongoing technical maintenance and security updates?',
+        answer: 'Yes, we offer monthly managed maintenance agreements covering core system updates, security patches, regular off-site database backups, uptime monitoring, and minor content revisions.'
       }
     ]
   },
@@ -295,8 +351,20 @@ export const SERVICES_LIST: ServiceItem[] = [
     industries: ['Colleges & Technical Institutes', 'Corporate IT Teams', 'Hospital Operations Staff', 'Banking Staff'],
     faqs: [
       {
-        question: 'Can you conduct training sessions at our office in Chitwan?',
-        answer: 'Yes, we provide both on-site corporate workshops at your premises or in structured hands-on lab sessions.'
+        question: 'Can you conduct training sessions at our office in Chitwan or on-site?',
+        answer: 'Yes, we provide both on-site corporate workshops at your premises across Chitwan and Nepal, as well as structured hands-on technical lab sessions.'
+      },
+      {
+        question: 'Which networking and systems certification curriculums do you cover?',
+        answer: 'Our trainers coach on Cisco CCNA/CCNP, MikroTik MTCNA/MTCRE, Linux Administration (RHCSA/Ubuntu), AWS Cloud Practitioner/Solutions Architect, and practical cybersecurity defense.'
+      },
+      {
+        question: 'Can Techno Path assist us with IT procurement tenders and vendor evaluation?',
+        answer: 'Yes, our senior consultants draft independent hardware specifications, review tender submissions, evaluate vendor bids, and perform pre-commissioning acceptance testing.'
+      },
+      {
+        question: 'How do you help traditional organizations transition to paperless digital workflows?',
+        answer: 'We map your existing paper processes, recommend tailored software tools, establish file naming and access controls, and train staff to ensure smooth organizational adoption.'
       },
       {
         question: 'Do you offer advice before we buy expensive servers or networking hardware?',

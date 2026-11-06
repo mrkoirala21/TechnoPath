@@ -141,19 +141,26 @@ export const SolutionsPage: React.FC<SolutionsPageProps> = ({ onOpenQuoteModal }
                 </div>
 
                 <div className="pt-2 flex flex-wrap items-center gap-4">
-                  <button
-                    onClick={() => onOpenQuoteModal(`Solution Inquiry: ${activeSolution.title}`)}
+                  <Link
+                    to={`/solutions/${activeSolution.id}`}
                     className="px-6 py-3 bg-[#F4510B] hover:bg-[#DC4607] text-white rounded-xl text-xs font-semibold shadow-xs transition-colors flex items-center gap-2"
                   >
-                    <span>Request Solution Blueprint</span>
+                    <span>View Dedicated Solution Page</span>
                     <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+
+                  <button
+                    onClick={() => onOpenQuoteModal(`Solution Inquiry: ${activeSolution.title}`)}
+                    className="px-5 py-3 bg-neutral-900 hover:bg-neutral-800 text-white rounded-xl text-xs font-semibold transition-colors flex items-center gap-2"
+                  >
+                    <span>Request Blueprint & Quote</span>
                   </button>
 
                   <Link
                     to="/contact"
-                    className="px-5 py-3 bg-neutral-900 hover:bg-neutral-800 text-white rounded-xl text-xs font-semibold transition-colors"
+                    className="px-5 py-3 border border-neutral-300 hover:bg-neutral-50 text-neutral-800 rounded-xl text-xs font-semibold transition-colors"
                   >
-                    Talk with Solution Architect
+                    Talk with Architect
                   </Link>
                 </div>
               </div>

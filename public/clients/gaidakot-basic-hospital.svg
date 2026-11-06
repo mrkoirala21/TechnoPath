@@ -1,9 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#F0FDFA"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#0D9488" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#0D9488" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#0D9488" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#0D9488" text-anchor="middle" letter-spacing="0.05em">GBH</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#0D9488"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#FEF2F2"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#DC2626" stroke-width="2.5" stroke-opacity="0.3"/>
+  <circle cx="100" cy="80" r="46" fill="#DC2626" fill-opacity="0.08"/>
+  <!-- Hospital Cross with circular sun shield -->
+  <circle cx="100" cy="80" r="38" stroke="#DC2626" stroke-width="2" stroke-dasharray="6 3"/>
+  <!-- Bold Red Cross -->
+  <rect x="92" y="56" width="16" height="48" rx="3" fill="#DC2626"/>
+  <rect x="76" y="72" width="48" height="16" rx="3" fill="#DC2626"/>
+  <!-- Mountain silhouette above cross -->
+  <path d="M 76 60 L 88 48 L 100 58 L 112 48 L 124 60" stroke="#1E3A8A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Caring hands base -->
+  <path d="M 74 104 C 84 116 116 116 126 104" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+  <!-- Typography Banner -->
+  <rect x="22" y="132" width="156" height="28" rx="7" fill="#DC2626"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.04em">GAIDAKOT BASIC</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#FEE2E2" text-anchor="middle" letter-spacing="0.1em">MUNICIPAL HOSPITAL</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">GAIDAKOT · NAWALPUR</text>
 </svg>

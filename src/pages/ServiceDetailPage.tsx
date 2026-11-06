@@ -19,6 +19,8 @@ import {
   FileCheck
 } from 'lucide-react';
 import { PageHeader } from '../components/common/PageHeader';
+import { FaqAccordion } from '../components/common/FaqAccordion';
+import { ImageWithFallback } from '../components/common/ImageWithFallback';
 import { SERVICES_LIST, COMPANY_INFO } from '../data/companyData';
 
 interface ServiceDetailPageProps {
@@ -87,11 +89,10 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ onOpenQuot
             <div className="lg:col-span-8 space-y-12">
               {/* Hero Visual Card */}
               <div className="relative rounded-2xl overflow-hidden aspect-[16/9] shadow-md border border-neutral-200 bg-neutral-900">
-                <img
+                <ImageWithFallback
                   src={service.heroImage}
                   alt={service.title}
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -191,29 +192,13 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ onOpenQuot
                 </div>
               </div>
 
-              {/* Frequently Asked Questions */}
+              {/* Frequently Asked Questions Accordion */}
               {service.faqs.length > 0 && (
-                <div>
-                  <h3 className="text-2xl font-extrabold text-neutral-900 mb-6 flex items-center gap-2">
-                    <HelpCircle className="w-6 h-6 text-[#F4510B]" />
-                    <span>Frequently Asked Questions</span>
-                  </h3>
-                  <div className="space-y-4">
-                    {service.faqs.map((faq, fidx) => (
-                      <div
-                        key={fidx}
-                        className="p-5 rounded-xl bg-[#F4F5F7] border border-neutral-200"
-                      >
-                        <h4 className="font-bold text-sm text-neutral-900 mb-1.5">
-                          {faq.question}
-                        </h4>
-                        <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                          {faq.answer}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <FaqAccordion 
+                  faqs={service.faqs} 
+                  serviceTitle={service.title} 
+                  onOpenQuoteModal={onOpenQuoteModal} 
+                />
               )}
             </div>
 

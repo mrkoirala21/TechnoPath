@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#F5F3FF"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#7C3AED" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#7C3AED" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#7C3AED" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#7C3AED" text-anchor="middle" letter-spacing="0.05em">AHTC</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#7C3AED"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#FFF1F2"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#BE123C" stroke-width="2.5" stroke-opacity="0.3"/>
+  <!-- Heraldic College Shield -->
+  <path d="M 66 52 L 134 52 L 134 86 C 134 110 100 124 100 124 C 100 124 66 110 66 86 Z" fill="#881337"/>
+  <!-- Open Book & Red Cross inside Shield -->
+  <path d="M 76 74 Q 100 68 100 78 Q 100 68 124 74 L 124 94 Q 100 88 100 98 Q 100 88 76 94 Z" fill="#FFFFFF"/>
+  <rect x="96" y="80" width="8" height="14" fill="#DC2626"/>
+  <rect x="93" y="83" width="14" height="8" fill="#DC2626"/>
+  <!-- College Torch -->
+  <path d="M 98 42 L 102 42 L 100 52 Z" fill="#F59E0B"/>
+  <circle cx="100" cy="40" r="4" fill="#EF4444"/>
+  <!-- Golden Leaves -->
+  <path d="M 56 82 C 56 104 74 122 96 128" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 144 82 C 144 104 126 122 104 128" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Typography Banner -->
+  <rect x="24" y="132" width="152" height="28" rx="7" fill="#881337"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.12em">AHTC COLLEGE</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7" font-weight="700" fill="#FECDD3" text-anchor="middle" letter-spacing="0.08em">ASIAN HEALTH TECHNICAL</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">CHITWAN · NEPAL</text>
 </svg>

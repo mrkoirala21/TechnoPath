@@ -212,7 +212,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
                   {SOLUTIONS_LIST.map((sol) => (
                     <Link
                       key={sol.id}
-                      to={`/solutions#${sol.id}`}
+                      to={`/solutions/${sol.id}`}
                       className="p-2.5 rounded-lg hover:bg-neutral-50 transition-colors flex items-start gap-3 group/item border border-transparent hover:border-neutral-200"
                     >
                       <div className="p-2 rounded-md bg-[#F4510B]/10 shrink-0 group-hover/item:bg-[#F4510B] transition-colors">
@@ -263,7 +263,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
                   {INDUSTRIES_LIST.map((ind) => (
                     <Link
                       key={ind.id}
-                      to={`/industries#${ind.id}`}
+                      to={`/industries/${ind.id}`}
                       className="p-2 rounded-lg hover:bg-neutral-50 text-xs font-medium text-neutral-800 hover:text-[#F4510B] transition-colors flex items-center justify-between"
                     >
                       <span>{ind.title}</span>
@@ -280,6 +280,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
             </div>
 
             <Link 
+              to="/clients" 
+              className={`px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
+                isActive('/clients') ? 'text-[#F4510B] font-semibold' : 'hover:text-[#F4510B]'
+              }`}
+            >
+              Clients
+            </Link>
+
+            <Link 
               to="/projects" 
               className={`px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
                 isActive('/projects') ? 'text-[#F4510B] font-semibold' : 'hover:text-[#F4510B]'
@@ -289,12 +298,21 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
             </Link>
 
             <Link 
+              to="/why-choose-us" 
+              className={`px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
+                isActive('/why-choose-us') ? 'text-[#F4510B] font-semibold' : 'hover:text-[#F4510B]'
+              }`}
+            >
+              Why Us
+            </Link>
+
+            <Link 
               to="/brands" 
               className={`px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
                 isActive('/brands') ? 'text-[#F4510B] font-semibold' : 'hover:text-[#F4510B]'
               }`}
             >
-              Brands / Partners
+              Brands
             </Link>
 
             <Link 
@@ -419,7 +437,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
                     {SOLUTIONS_LIST.map((sol) => (
                       <Link 
                         key={sol.id} 
-                        to={`/solutions#${sol.id}`}
+                        to={`/solutions/${sol.id}`}
                         className="py-1.5 text-xs text-neutral-600 hover:text-[#F4510B]"
                       >
                         {sol.title}
@@ -440,10 +458,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
                 </button>
                 {mobileExpandedSection === 'industries' && (
                   <div className="pl-4 py-1 flex flex-col gap-1 border-l-2 border-[#F4510B]/20 ml-3">
+                    <Link to="/industries" className="py-1.5 text-xs text-[#F4510B] font-semibold">
+                      All Industries Overview
+                    </Link>
                     {INDUSTRIES_LIST.map((ind) => (
                       <Link 
                         key={ind.id} 
-                        to={`/industries#${ind.id}`}
+                        to={`/industries/${ind.id}`}
                         className="py-1.5 text-xs text-neutral-600 hover:text-[#F4510B]"
                       >
                         {ind.title}
@@ -452,6 +473,27 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
                   </div>
                 )}
               </div>
+
+              <Link 
+                to="/clients" 
+                className={`py-2.5 px-3 rounded-lg ${isActive('/clients') ? 'bg-[#F4510B]/10 text-[#F4510B] font-semibold' : 'hover:bg-neutral-50'}`}
+              >
+                Our Precious Clients (16+)
+              </Link>
+
+              <Link 
+                to="/testimonials" 
+                className={`py-2.5 px-3 rounded-lg ${isActive('/testimonials') ? 'bg-[#F4510B]/10 text-[#F4510B] font-semibold' : 'hover:bg-neutral-50'}`}
+              >
+                Client Testimonials
+              </Link>
+
+              <Link 
+                to="/why-choose-us" 
+                className={`py-2.5 px-3 rounded-lg ${isActive('/why-choose-us') ? 'bg-[#F4510B]/10 text-[#F4510B] font-semibold' : 'hover:bg-neutral-50'}`}
+              >
+                Why Choose Us
+              </Link>
 
               <Link 
                 to="/projects" 

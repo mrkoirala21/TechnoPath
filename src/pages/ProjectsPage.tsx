@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   ArrowRight, 
   CheckCircle, 
@@ -10,6 +11,7 @@ import {
   PhoneCall,
   ExternalLink
 } from 'lucide-react';
+import { PageHeader } from '../components/common/PageHeader';
 import { PROJECTS_LIST, COMPANY_INFO } from '../data/companyData';
 import { ProjectItem } from '../types';
 import { ImageWithFallback } from '../components/common/ImageWithFallback';
@@ -126,19 +128,19 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onOpenQuoteModal }) 
                 </div>
 
                 <div className="p-6 pt-0 border-t border-neutral-100 flex items-center justify-between mt-4">
-                  <button
-                    onClick={() => setActiveModalProject(project)}
-                    className="text-xs font-semibold text-[#F4510B] hover:text-[#DC4607] flex items-center gap-1.5"
+                  <Link
+                    to={`/projects/${project.id}`}
+                    className="text-xs font-bold text-[#F4510B] hover:text-[#DC4607] flex items-center gap-1.5"
                   >
-                    <span>Inspect Full Case Study</span>
+                    <span>View Dedicated Case Study</span>
                     <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                  </Link>
 
                   <button
-                    onClick={() => onOpenQuoteModal(`Project Inquiry: ${project.title}`)}
+                    onClick={() => setActiveModalProject(project)}
                     className="text-[11px] text-neutral-500 hover:text-neutral-900 font-medium"
                   >
-                    Request Similar Setup
+                    Quick Preview
                   </button>
                 </div>
               </div>

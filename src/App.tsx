@@ -8,10 +8,17 @@ import { AboutPage } from './pages/AboutPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { ServiceDetailPage } from './pages/ServiceDetailPage';
 import { SolutionsPage } from './pages/SolutionsPage';
+import { SolutionDetailPage } from './pages/SolutionDetailPage';
 import { IndustriesPage } from './pages/IndustriesPage';
+import { IndustryDetailPage } from './pages/IndustryDetailPage';
 import { ProjectsPage } from './pages/ProjectsPage';
+import { ProjectDetailPage } from './pages/ProjectDetailPage';
+import { ClientsPage } from './pages/ClientsPage';
+import { TestimonialsPage } from './pages/TestimonialsPage';
+import { WhyChooseUsPage } from './pages/WhyChooseUsPage';
 import { BrandsPage } from './pages/BrandsPage';
 import { BlogPage } from './pages/BlogPage';
+import { BlogDetailPage } from './pages/BlogDetailPage';
 import { ContactPage } from './pages/ContactPage';
 import { DeploymentGuidePage } from './pages/DeploymentGuidePage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -52,13 +59,20 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/about" element={<AboutPage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/why-choose-us" element={<WhyChooseUsPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/services" element={<ServicesPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/services/:slug" element={<ServiceDetailPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/solutions" element={<SolutionsPage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/solutions/:slug" element={<SolutionDetailPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/industries" element={<IndustriesPage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/industries/:slug" element={<IndustryDetailPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/projects" element={<ProjectsPage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/projects/:slug" element={<ProjectDetailPage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/clients" element={<ClientsPage onOpenQuoteModal={handleOpenQuoteModal} />} />
+            <Route path="/testimonials" element={<TestimonialsPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/brands" element={<BrandsPage onOpenQuoteModal={handleOpenQuoteModal} />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogDetailPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/deployment-guide" element={<DeploymentGuidePage />} />
             <Route path="*" element={<NotFoundPage />} />

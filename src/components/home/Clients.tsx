@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Building2, 
   HeartPulse, 
@@ -136,6 +137,54 @@ export const Clients: React.FC<ClientsProps> = ({ onOpenQuoteModal }) => {
           })}
         </div>
 
+        {/* Official Client Logo Quick-Bar */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-neutral-200/90 shadow-2xs">
+          <div className="flex items-center justify-between mb-3 px-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-neutral-500">
+              Official Partner Logos (16 Verified Institutions)
+            </span>
+            <span className="text-[11px] font-semibold text-[#F4510B]">
+              Chitwan · Nawalpur · Pan-Nepal
+            </span>
+          </div>
+          <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+            {PRECIOUS_CLIENTS.map((c) => {
+              const src = getClientLogo(c.id);
+              const isSelected = selectedSector === c.sector;
+              return (
+                <button
+                  key={c.id}
+                  onClick={() => {
+                    setSelectedSector(c.sector);
+                    setSearchQuery(c.name);
+                  }}
+                  className={`shrink-0 flex items-center gap-2.5 p-2 bg-white rounded-xl border transition-all duration-200 hover:border-[#F4510B] hover:shadow-xs group/item ${
+                    isSelected ? 'border-[#F4510B]/40 shadow-2xs' : 'border-neutral-200'
+                  }`}
+                  title={`View ${c.name} implementation details`}
+                >
+                  <div className="w-10 h-10 rounded-lg p-0.5 bg-neutral-50 flex items-center justify-center shrink-0">
+                    <img
+                      src={src}
+                      alt={c.name}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="text-left pr-1.5 hidden sm:block">
+                    <div className="text-xs font-bold text-neutral-800 group-hover/item:text-[#F4510B] transition-colors leading-tight whitespace-nowrap">
+                      {c.name.split(' ')[0]} {c.name.split(' ')[1] || ''}
+                    </div>
+                    <div className="text-[10px] text-neutral-400 font-medium whitespace-nowrap">
+                      {c.sector.split(' ')[0]}
+                    </div>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Clients Responsive Grid */}
         {filteredClients.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -151,18 +200,18 @@ export const Clients: React.FC<ClientsProps> = ({ onOpenQuoteModal }) => {
                   <div>
                     {/* Logo & Sector Header */}
                     <div className="flex items-start justify-between gap-3 mb-4">
-                      {/* Client Logo with Infallible Fallback */}
-                      <div className="w-14 h-14 rounded-xl bg-white border border-neutral-200/90 p-1.5 flex items-center justify-center shrink-0 shadow-2xs group-hover:border-[#F4510B]/30 transition-colors">
+                      {/* Prominent Official Client Logo Frame */}
+                      <div className="w-20 h-20 rounded-2xl bg-white border border-neutral-200 p-2 flex items-center justify-center shrink-0 shadow-xs group-hover:border-[#F4510B]/40 group-hover:shadow-md transition-all duration-200">
                         {!isImgFailed ? (
                           <img
                             src={logoSrc}
                             alt={`${client.name} official logo`}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-contain transition-transform duration-200 group-hover:scale-105"
                             onError={() => handleImageError(client.id)}
-                            referrerPolicy="no-referrer"
+                            loading="lazy"
                           />
                         ) : (
-                          <div className="font-black font-mono text-sm tracking-wider text-[#F4510B]">
+                          <div className="font-black font-mono text-base tracking-wider text-[#F4510B]">
                             {client.logoBadge}
                           </div>
                         )}
@@ -270,17 +319,33 @@ export const Clients: React.FC<ClientsProps> = ({ onOpenQuoteModal }) => {
           </div>
         </div>
 
-        {/* Invitation Banner */}
-        <div className="text-center pt-2">
-          <span className="text-xs text-neutral-600">
-            Ready to upgrade your enterprise network, hospital HMIS, or institutional IT?{' '}
-          </span>
-          <button
-            onClick={() => onOpenQuoteModal('Consultation for New Client Onboarding')}
-            className="text-xs font-bold text-[#F4510B] hover:underline ml-1 inline-flex items-center gap-1"
-          >
-            <span>Partner with Techno Path today →</span>
-          </button>
+        {/* Invitation Banner & Dedicated Page Navigation */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-neutral-100">
+          <div className="text-xs text-neutral-600 text-center sm:text-left">
+            <span>Ready to upgrade your enterprise network, hospital HMIS, or institutional IT? </span>
+            <button
+              onClick={() => onOpenQuoteModal('Consultation for New Client Onboarding')}
+              className="font-bold text-[#F4510B] hover:underline"
+            >
+              Partner with Techno Path today
+            </button>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Link
+              to="/clients"
+              className="px-4 py-2 rounded-xl bg-neutral-900 hover:bg-[#F4510B] text-white font-semibold text-xs transition-colors flex items-center gap-1.5 shadow-sm"
+            >
+              <span>Dedicated Clients Directory</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+            <Link
+              to="/testimonials"
+              className="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 font-semibold text-xs transition-colors"
+            >
+              Client Reviews
+            </Link>
+          </div>
         </div>
       </div>
     </section>

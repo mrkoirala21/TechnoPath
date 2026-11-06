@@ -1,9 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#EEF2FF"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#4338CA" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#4338CA" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#4338CA" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#4338CA" text-anchor="middle" letter-spacing="0.05em">FC</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#4338CA"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#EFF6FF"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#1E3A8A" stroke-width="2.5" stroke-opacity="0.3"/>
+  <!-- Collegiate Shield with Battlement Crown -->
+  <path d="M 66 58 L 134 58 L 134 88 C 134 112 100 126 100 126 C 100 126 66 112 66 88 Z" fill="#1E3A8A"/>
+  <!-- Battlement Tower -->
+  <path d="M 80 50 L 80 58 L 120 58 L 120 50 L 114 50 L 114 54 L 108 54 L 108 50 L 102 50 L 102 54 L 98 54 L 98 50 L 92 50 L 92 54 L 86 54 L 86 50 Z" fill="#D97706"/>
+  <!-- Open Academic Book inside Shield -->
+  <path d="M 76 78 Q 100 72 100 82 Q 100 72 124 78 L 124 98 Q 100 92 100 102 Q 100 92 76 98 Z" fill="#FFFFFF"/>
+  <path d="M 100 74 L 100 102" stroke="#D97706" stroke-width="2"/>
+  <!-- Graduation Quill -->
+  <path d="M 112 70 L 124 82" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <!-- Typography Banner -->
+  <rect x="24" y="132" width="152" height="28" rx="7" fill="#1E3A8A"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">FORBES COLLEGE</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#FDE68A" text-anchor="middle" letter-spacing="0.1em">HOSPITALITY & IT</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">BHARATPUR · CHITWAN</text>
 </svg>

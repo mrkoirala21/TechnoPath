@@ -91,6 +91,21 @@ export const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/why-choose-us" className="hover:text-white hover:translate-x-1 inline-block transition-all text-[#F4510B]/90 font-medium">
+                    Why Choose Techno Path
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/clients" className="hover:text-white hover:translate-x-1 inline-block transition-all text-emerald-400 font-medium">
+                    Our Precious Clients (16+)
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/testimonials" className="hover:text-white hover:translate-x-1 inline-block transition-all">
+                    Client Testimonials
+                  </Link>
+                </li>
+                <li>
                   <Link to="/services" className="hover:text-white hover:translate-x-1 inline-block transition-all">
                     Comprehensive Services
                   </Link>

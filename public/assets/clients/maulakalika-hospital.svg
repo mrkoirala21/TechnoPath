@@ -1,9 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#FFF7ED"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#F4510B" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#F4510B" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#F4510B" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#F4510B" text-anchor="middle" letter-spacing="0.05em">MKH</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#F4510B"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#FEF2F2"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#991B1B" stroke-width="2.5" stroke-opacity="0.3"/>
+  <circle cx="100" cy="80" r="46" fill="#991B1B" fill-opacity="0.08"/>
+  <!-- Temple Silhouette on Mountain Top -->
+  <!-- Mountain ridges -->
+  <path d="M 60 106 L 82 82 L 100 94 L 118 82 L 140 106 Z" fill="#991B1B" fill-opacity="0.2"/>
+  <!-- Pagoda Temple -->
+  <path d="M 88 80 L 112 80 L 100 68 Z" fill="#991B1B"/>
+  <path d="M 92 68 L 108 68 L 100 58 Z" fill="#B91C1C"/>
+  <rect x="99" y="52" width="2" height="6" fill="#F59E0B"/>
+  <circle cx="100" cy="51" r="2.5" fill="#F59E0B"/>
+  <!-- Rising Sun Behind Temple -->
+  <circle cx="100" cy="58" r="18" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <!-- Medical Red Cross Shield -->
+  <circle cx="100" cy="108" r="14" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="98" y="100" width="4" height="16" fill="#FFFFFF"/>
+  <rect x="92" y="106" width="16" height="4" fill="#FFFFFF"/>
+  <!-- Typography Banner -->
+  <rect x="22" y="132" width="156" height="28" rx="7" fill="#7F1D1D"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.05em">MAULAKALIKA</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#FECACA" text-anchor="middle" letter-spacing="0.1em">HOSPITAL PVT. LTD.</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">BHARATPUR · CHITWAN</text>
 </svg>

@@ -1,9 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#FFF1F2"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#BE123C" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#BE123C" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#BE123C" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="900" fill="#BE123C" text-anchor="middle" letter-spacing="0.05em">PJH</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#BE123C"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#FFF7ED"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#EA580C" stroke-width="2.5" stroke-opacity="0.3"/>
+  <circle cx="100" cy="80" r="46" fill="#FFEDD5"/>
+  <!-- Sacred Pushpa (Blooming Lotus) with Medical Cross -->
+  <path d="M 100 52 C 108 64 116 78 100 96 C 84 78 92 64 100 52 Z" fill="#EA580C"/>
+  <path d="M 76 68 C 90 74 94 88 100 96 C 88 96 74 88 76 68 Z" fill="#F97316"/>
+  <path d="M 124 68 C 110 74 106 88 100 96 C 112 96 126 88 124 68 Z" fill="#F97316"/>
+  <path d="M 68 84 C 82 86 92 94 100 98 C 88 102 70 98 68 84 Z" fill="#FB923C"/>
+  <path d="M 132 84 C 118 86 108 94 100 98 C 112 102 130 98 132 84 Z" fill="#FB923C"/>
+  <!-- Inset Medical Red Cross in Lotus Base -->
+  <circle cx="100" cy="110" r="14" fill="#DC2626"/>
+  <rect x="98" y="102" width="4" height="16" fill="#FFFFFF"/>
+  <rect x="92" y="108" width="16" height="4" fill="#FFFFFF"/>
+  <!-- Typography Banner -->
+  <rect x="22" y="132" width="156" height="28" rx="7" fill="#C2410C"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.05em">PUSHPANJALI</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#FED7AA" text-anchor="middle" letter-spacing="0.1em">HOSPITAL PVT. LTD.</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">BHARATPUR · CHITWAN</text>
 </svg>

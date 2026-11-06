@@ -84,13 +84,13 @@ export const BlogPage: React.FC = () => {
                   </p>
 
                   <div className="pt-2 flex items-center gap-4">
-                    <button
-                      onClick={() => setActiveArticle(featuredPost)}
+                    <Link
+                      to={`/blog/${featuredPost.slug}`}
                       className="px-5 py-2.5 bg-[#F4510B] hover:bg-[#DC4607] text-white rounded-xl text-xs font-semibold transition-colors flex items-center gap-2"
                     >
                       <span>Read Full Insight</span>
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
+                    </Link>
                     <span className="text-xs text-neutral-400">By {featuredPost.author}</span>
                   </div>
                 </div>
@@ -198,13 +198,13 @@ export const BlogPage: React.FC = () => {
                   </div>
 
                   <div className="p-6 pt-0 border-t border-neutral-100 flex items-center justify-between mt-4">
-                    <button
-                      onClick={() => setActiveArticle(post)}
+                    <Link
+                      to={`/blog/${post.slug}`}
                       className="text-xs font-semibold text-[#F4510B] hover:text-[#DC4607] flex items-center gap-1"
                     >
                       <span>Read Article</span>
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
+                    </Link>
                     <span className="text-[11px] text-neutral-400">
                       {post.author.split(' ')[0]}
                     </span>

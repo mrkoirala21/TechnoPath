@@ -1,9 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect width="200" height="200" rx="36" fill="#ECFDF5"/>
-  <rect x="12" y="12" width="176" height="176" rx="28" stroke="#059669" stroke-width="3" stroke-opacity="0.25"/>
-  <circle cx="100" cy="80" r="42" fill="#059669" fill-opacity="0.12"/>
-  <circle cx="100" cy="80" r="32" stroke="#059669" stroke-width="4"/>
-  <text x="100" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" fill="#059669" text-anchor="middle" letter-spacing="0.05em">SHTA</text>
-  <rect x="30" y="142" width="140" height="24" rx="6" fill="#059669"/>
-  <text x="100" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.08em">CLIENT PARTNER</text>
+  <rect width="200" height="200" rx="32" fill="#F0FDFA"/>
+  <rect x="8" y="8" width="184" height="184" rx="26" stroke="#0D9488" stroke-width="2.5" stroke-opacity="0.3"/>
+  <!-- Technical Gear Wheel Background -->
+  <circle cx="100" cy="80" r="46" fill="#0D9488" fill-opacity="0.08" stroke="#0D9488" stroke-width="1.5" stroke-dasharray="8 4"/>
+  <!-- Medical Red/Teal Cross -->
+  <rect x="92" y="52" width="16" height="56" rx="3" fill="#0F766E"/>
+  <rect x="72" y="72" width="56" height="16" rx="3" fill="#0F766E"/>
+  <!-- Heartbeat ECG line through cross -->
+  <path d="M 64 80 L 86 80 L 92 68 L 98 92 L 104 74 L 110 84 L 114 80 L 136 80" stroke="#14B8A6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Winged Staff Emblem -->
+  <path d="M 80 58 Q 100 48 120 58" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Brand text -->
+  <rect x="24" y="132" width="152" height="28" rx="7" fill="#0F766E"/>
+  <text x="100" y="148" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.06em">SOOJUNG ACADEMY</text>
+  <text x="100" y="157" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7" font-weight="700" fill="#99F6E4" text-anchor="middle" letter-spacing="0.08em">HEALTH & TECHNICAL</text>
+  <text x="100" y="174" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="800" fill="#64748B" text-anchor="middle" letter-spacing="0.08em">CHITWAN · NEPAL</text>
 </svg>

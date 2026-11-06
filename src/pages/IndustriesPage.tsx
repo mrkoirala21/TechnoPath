@@ -100,13 +100,19 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({ onOpenQuoteModal
                       </div>
                     </div>
 
-                    <div className="pt-4 flex items-center gap-3">
+                    <div className="pt-4 flex flex-wrap items-center gap-3">
+                      <Link
+                        to={`/industries/${ind.id}`}
+                        className="px-4 py-2.5 bg-neutral-900 hover:bg-neutral-800 text-white rounded-xl text-xs font-semibold transition-colors flex items-center gap-1.5"
+                      >
+                        <span>Dedicated Industry Page</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-[#F4510B]" />
+                      </Link>
                       <button
                         onClick={() => onOpenQuoteModal(`Industry Consultation: ${ind.title}`)}
-                        className="px-5 py-2.5 bg-[#F4510B] hover:bg-[#DC4607] text-white rounded-xl text-xs font-semibold shadow-xs transition-colors flex items-center gap-2"
+                        className="px-4 py-2.5 bg-[#F4510B] hover:bg-[#DC4607] text-white rounded-xl text-xs font-semibold shadow-xs transition-colors flex items-center gap-2"
                       >
-                        <span>Request Industry Consultation</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
+                        <span>Request Consultation</span>
                       </button>
                     </div>
                   </div>
